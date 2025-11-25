@@ -132,7 +132,6 @@ def search_query(target: str):
 
 
 @app.get("/api/graph/{item_id}")
-@alru_cache(maxsize=1024)
 async def get_item(item_id: int):
     if args.low_ram:
         data = conn.execute(f"SELECT * FROM gbc OFFSET {item_id} LIMIT 1").fetchone()

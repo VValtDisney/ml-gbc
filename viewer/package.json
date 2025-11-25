@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev:vite": "vite",
-    "dev:api": "python ./server/api.py --path ./data --low-ram",
+    "dev:api": "python3 ./server/api.py --path ./data --low_ram",
     "dev": "npm-run-all --parallel dev:vite dev:api --",
     "build": "vite build",
     "preview": "vite preview"

@@ -3,6 +3,7 @@ export default {
         drop: ['console', 'debugger'],
     },
     server: {
+        host: '0.0.0.0',
         port: process.env.VITE_PORT || 5173,
         proxy: {
             '/api': {
